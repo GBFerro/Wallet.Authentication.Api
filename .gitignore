@@ -361,3 +361,14 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/.vs/Wallet.Authentication.Api/v17/DocumentLayout.json
+/.vs/Wallet.Authentication.Api/v17/.suo
+/.vs/Wallet.Authentication.Api/DesignTimeBuild/.dtbcache.v2
+/.vs/Wallet.Authentication.Api/config/applicationhost.config
+/.vs/Wallet.Authentication.Api/v17/.futdcache.v2
+/.vs/Wallet.Authentication.Api/v17/.wsuo
+/.vs/Wallet.Authentication.Api/FileContentIndex/a0d3d34d-c858-4dbe-b387-9ce7b99a2878.vsidx
+/.vs/Wallet.Authentication.Api/FileContentIndex/9c9dd723-b9a4-45a3-9e71-162adbd06aef.vsidx
+/.vs/Wallet.Authentication.Api/FileContentIndex/903dd781-4491-497f-b6cc-6269cf7f4696.vsidx
+/.vs/Wallet.Authentication.Api/FileContentIndex/8f073589-166d-42a8-9dbe-72ac677a560f.vsidx
+/.vs/Wallet.Authentication.Api/FileContentIndex/807e6379-25dd-4312-8729-84f1788b5b17.vsidx
