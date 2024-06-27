@@ -1,6 +1,9 @@
-﻿namespace Wallet.Authentication.CrossCutting.Configuration
+﻿using Wallet.Authentication.CrossCutting.Configuration.Models.v1;
+
+namespace Wallet.Authentication.CrossCutting.Configuration
 {
-    public class AppSettings
+    public sealed partial class AppSettings
     {
+        public ApplicationSettings ApplicationSettings { get; set; }
     }
 }

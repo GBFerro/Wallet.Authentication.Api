@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Wallet.Authentication.Domain.Command.v1
+namespace Wallet.Authentication.Domain.Command.v1.LogOut
 {
-    public class Sample
+    public class LogOutCommandResponse
     {
     }
 }

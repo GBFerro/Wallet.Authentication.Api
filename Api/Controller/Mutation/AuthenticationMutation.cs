@@ -1,21 +1,27 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using System.Net;
+using Wallet.Authentication.Domain.Command.v1.Authenticate;
+using Wallet.Authentication.Domain.Command.v1.LogOut;
 
 namespace Wallet.Authentication.Api.Controller.Mutation
 {
     public class AuthenticationMutation
     {
-        private readonly IMediator _mediator;
+        [ProducesResponseType(typeof(AuthenticateCommandResponse), (int)HttpStatusCode.Created)]
+        public async Task<AuthenticateCommandResponse> Authenticate(
+            [Service] IMediator mediator,
+            AuthenticateCommand command,
+            CancellationToken cancellationToken
+        ) =>
+            await mediator.Send(command, cancellationToken);
 
-        public AuthenticationMutation(IMediator mediator)
-        {
-            _mediator = mediator;
-        }
-
-        [ProducesResponseType(typeof(string), (int)HttpStatusCode.Created)]
-        public async Task<int> CreateUser(string name, string email)
-            => (int)HttpStatusCode.Created;
-        // await _mediator.Send();
+        [ProducesResponseType((int)HttpStatusCode.Created)]
+        public async Task LogOut(
+            [Service] IMediator mediator,
+            LogOutCommand command,
+            CancellationToken cancellationToken
+        ) =>
+            await mediator.Send(command, cancellationToken);
     }
 }
